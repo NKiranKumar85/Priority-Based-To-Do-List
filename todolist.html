@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>To-do List</title>
+        <link href="todolist.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar">
+            <p>WD-MAJOR-PROJECT MAY-BATCH 2021</p>
+        </div>
+        <br>
+            <header class="ct">
+            <div id="firstdiv">
+            <h2>To Do List</h2>
+            <label>Task: </label>
+            <input class="input" type="text" id="inp" placeholder="Enter Your Task..." required>
+            <br>
+            <label>Priority: </label>
+            <select class="input" id="priority" required>
+                <option value="High" selected>High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <br><br>
+            <span onclick="addItem()" class="save">Save</span>
+            <br>
+            </div>
+            <div class="filterList">
+                <label>Filter Task: </label>
+                <span class="filter" id="all" onclick="sortList('all')">ALL</span>
+                <span class="filter" id="Low" onclick="sortList('Low')">LOW</span>
+                <span class="filter" id="Medium" onclick="sortList('Medium')">MEDIUM</span>
+                <span class="filter" id="High" onclick="sortList('High')">HIGH</span>
+            </div>
+            <div class="info"><label>Displayed tasks: <span id="inf">0</span></label></div>
+        </header>
+        <div class="scr">
+            <ul id="todos" >
+                <li>Add a new Task! To complete the tasks just click on them. Edit them in the popup window. </li>
+            </ul>
+        </div>
+        <script src="todolist.js"></script>
+        <div class="footer">
+            <marquee behavior="" direction="left">Thank You & Visit Again</marquee>
+          </div><hr>
+    </body>
+</html>

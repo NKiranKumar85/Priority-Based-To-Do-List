@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+#firstdiv{
+    background-color: #2F2FA2;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+label{
+    padding: 10px;
+    font-size: 26px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+    list-style-type: none;
+    padding: 20px;
+    margin-inline: 50px;
+    margin-block: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 5px #888888;
+    background-color: #3682f4;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: auto;
+    position: relative;
+}
+
+h2 {
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+h2:hover {
+    letter-spacing: 2px;
+}
+
+li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+
+.input {
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.close {
+    position:absolute;
+    right: 0;
+    top:0;
+    margin: 5px;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    color: red;
+}
+
+.edit {
+    position:absolute;
+    right: 0;
+    bottom:0;
+    margin: 5px;
+    padding: 12px 16px 12px 16px;
+}
+
+.edit:hover {
+    color: green;
+}
+
+.ct {
+    text-align: center;
+    justify-content: center;
+}
+
+.save {
+    background-color: green;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 10px;
+    padding: 5px 40px;
+    cursor: pointer;
+    
+}
+
+.filterList {
+    margin-top: 30px;
+    position: absolute;
+    
+}
+
+.filter {
+    margin-inline: 20px;
+    background-color: rgb(255, 174, 0);
+    text-transform: uppercase;
+    color:white;
+    border-radius: 10px;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.scr {
+    height: 400px;
+    overflow: auto;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+#todos {
+    text-align: center;
+    justify-content: center;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding: 10px;
+   font-family: 'Montserrat',sans-serif;
+   background-color: #c5c5c5;
+   color: white;
+   text-align: center;
+}
+marquee{
+    color: blue;
+}
+#navbar{
+    background-color: #c5c5c5;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    padding: 9px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    color: blue;
+}
